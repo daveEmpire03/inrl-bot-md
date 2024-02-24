@@ -8,5 +8,5 @@ RUN apt-get update && \
   rm -rf /var/lib/apt/lists/*
 RUN git clone https://github.com/INR-L/inrl-bot-md /beta
 WORKDIR /beta
-RUN yarn install --network-concurrency 1
+RUN npm install
 CMD ["node", "index.js"]
