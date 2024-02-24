@@ -1,5 +1,5 @@
 {
-  "name": "inrl@4.1.1",
+  "name": "inrl@4.1.2",
   "description": "simple multi featured whatsapp bot",
   "keywords": ["whatsapp"],
   "success_url": "/",
@@ -88,18 +88,17 @@
   },
   "addons": [
     {
-      "plan": "heroku-postgresql"
-    }
+      "plan": "heroku-postgresql:basic"
+    } 
   ],
-"buildpacks": [
-    {
-      "url": "heroku/nodejs"
-    },
-    {
-      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-    },
-    {
-      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
-    }
-]
+  "buildpacks": [
+    { "url": "https://github.com/heroku/heroku-buildpack-nodejs#latest" },
+    { "url": "https://github.com/carlosdommor/heroku-buildpack-ffmpeg-latest" }
+  ],
+  "formation": {
+      "web": {
+          "quantity": 1,
+          "size": "standard-2x"
+      }
+  }
 }
