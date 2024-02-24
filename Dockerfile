@@ -6,7 +6,6 @@ RUN apt-get update && \
   webp && \
   apt-get upgrade -y && \
   rm -rf /var/lib/apt/lists/*
-
 RUN git clone https://github.com/INR-L/inrl-bot-md /beta
 WORKDIR /beta
 RUN yarn install --network-concurrency 1
