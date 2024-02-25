@@ -3,7 +3,6 @@
   "description": "simple multi featured whatsapp bot",
   "keywords": ["whatsapp"],
   "success_url": "/",
-  "stack": "container",
   "env": {
     "SESSION_ID": {
       "description": "to run the bot",
