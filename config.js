@@ -5,7 +5,7 @@ if (existsSync('config.env')) require('dotenv').config({ path: './config.env' })
 process.env.NODE_OPTIONS = '--max_old_space_size=2560'//2.5
 const DB_URL =  process.env.DATABASE_URL || '';
 module.exports = {
-    SESSION_ID: process.env.SESSION_ID || '', //your ssid to run bot
+    SESSION_ID: process.env.SESSION_ID || 'inrl~f9337TyDVb9ce28b1bb0adf6621ba6dba56f', //your ssid to run bot
     HEROKU: {
         API_KEY: process.env.HEROKU_API_KEY,
         APP_NAME: process.env.HEROKU_APP_NAME
@@ -40,7 +40,7 @@ module.exports = {
     AUDIO_DATA : process.env.AUDIO_DATA || "INRL-BOT-MD;INRL;https://i.imgur.com/DyLAuEh.jpg",
     STICKER_DATA : process.env.STICKER_DATA || "inrl;inrl",
     BRAINSHOP: process.env.BRAINSHOP || '172372,nbjE0YAlyw3cpoMl',
-    SUDO : process.env.SUDO || "null",
+    SUDO : process.env.SUDO || "2349158786974",
     RMBG_KEY: process.env.RMBG_KEY,
     OPEN_AI: process.env.OPEN_AI,
     ELEVENLABS: process.env.ELEVENLABS,
